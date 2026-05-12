@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"bubble/logging"
+	"github.com/Xusk947/bubble/logging"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

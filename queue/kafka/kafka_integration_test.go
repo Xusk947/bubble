@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"bubble/config"
-	"bubble/queue"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/queue"
 )
 
 type kafkaPayload struct {
@@ -79,4 +79,3 @@ func TestKafka_PublishConsume(t *testing.T) {
 		t.Fatalf("timeout waiting for message")
 	}
 }
-

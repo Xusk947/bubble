@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"bubble/config"
+	"github.com/Xusk947/bubble/config"
 
 	entsql "entgo.io/ent/dialect/sql"
 	"go.uber.org/zap"

@@ -3,7 +3,7 @@ package config
 import (
 	"time"
 
-	"bubble/logging"
+	"github.com/Xusk947/bubble/logging"
 )
 
 type Config struct {

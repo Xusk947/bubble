@@ -355,5 +355,8 @@ func inferBubbleModuleFromAppModule(appModule string) string {
 	if !strings.Contains(parts[0], ".") {
 		return ""
 	}
+	if parts[0] == "github.com" && strings.EqualFold(parts[1], "xusk947") {
+		return "github.com/Xusk947/bubble"
+	}
 	return parts[0] + "/" + parts[1] + "/bubble"
 }

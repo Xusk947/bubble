@@ -1,4 +1,4 @@
-module bubble
+module github.com/Xusk947/bubble
 
 go 1.26.2
 

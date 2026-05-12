@@ -6,20 +6,20 @@ import (
 	"os"
 	"strings"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/bubbles/textinput"
+	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/mattn/go-isatty"
 )
 
 type InitResult struct {
-	Name        string
-	Module      string
+	Name         string
+	Module       string
 	BubbleModule string
-	DB          string
-	Cache       string
-	Queue       string
-	S3          bool
+	DB           string
+	Cache        string
+	Queue        string
+	S3           bool
 }
 
 var errInitCanceled = errors.New("init canceled")
@@ -76,16 +76,16 @@ type initModel struct {
 	module textinput.Model
 	bubble textinput.Model
 
-	dbChoices []string
-	dbCursor  int
+	dbChoices  []string
+	dbCursor   int
 	dbSelected int
 
-	cacheChoices []string
-	cacheCursor  int
+	cacheChoices  []string
+	cacheCursor   int
 	cacheSelected int
 
-	queueChoices []string
-	queueCursor  int
+	queueChoices  []string
+	queueCursor   int
 	queueSelected int
 
 	s3Cursor int
@@ -165,19 +165,19 @@ func newInitModel(initial Flags) initModel {
 	queueSelected := queueCursor
 
 	return initModel{
-		step:      step,
-		baseDir:   strings.TrimSpace(initial.Dir),
-		name:      name,
-		module:    module,
-		bubble:    bubble,
-		dbChoices: dbChoices,
-		dbCursor:  dbCursor,
-		dbSelected: dbSelected,
-		cacheChoices: cacheChoices,
-		cacheCursor:  cacheCursor,
+		step:          step,
+		baseDir:       strings.TrimSpace(initial.Dir),
+		name:          name,
+		module:        module,
+		bubble:        bubble,
+		dbChoices:     dbChoices,
+		dbCursor:      dbCursor,
+		dbSelected:    dbSelected,
+		cacheChoices:  cacheChoices,
+		cacheCursor:   cacheCursor,
 		cacheSelected: cacheSelected,
-		queueChoices: queueChoices,
-		queueCursor:  queueCursor,
+		queueChoices:  queueChoices,
+		queueCursor:   queueCursor,
 		queueSelected: queueSelected,
 		s3Cursor:      0,
 		enableS3:      initial.S3,

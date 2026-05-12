@@ -13,4 +13,3 @@ func Print(w io.Writer) {
 	}
 	fmt.Fprintln(w, "unknown")
 }
-

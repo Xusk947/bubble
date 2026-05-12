@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	bubbleconfig "bubble/config"
-	"bubble/objectstore"
+	bubbleconfig "github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/objectstore"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awsconfig "github.com/aws/aws-sdk-go-v2/config"

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"bubble/config"
+	"github.com/Xusk947/bubble/config"
 
 	"github.com/nats-io/nats.go"
 	"go.uber.org/zap"

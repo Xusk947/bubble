@@ -3,7 +3,7 @@ package database
 import (
 	"strings"
 
-	"bubble/config"
+	"github.com/Xusk947/bubble/config"
 )
 
 func ResolveAtlasURL(cfg config.DatabaseConfig) (string, error) {

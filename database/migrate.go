@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"bubble/config"
+	"github.com/Xusk947/bubble/config"
 
 	"ariga.io/atlas/atlasexec"
 	"go.uber.org/zap"

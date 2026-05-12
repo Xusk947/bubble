@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"bubble/config"
-	"bubble/queue"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/queue"
 
 	"github.com/nats-io/nats.go"
 )
@@ -33,4 +33,3 @@ func EnsureStream(ctx context.Context, js nats.JetStreamContext, cfg config.NATS
 	})
 	return err
 }
-

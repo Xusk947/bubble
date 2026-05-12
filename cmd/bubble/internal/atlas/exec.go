@@ -24,4 +24,3 @@ func execAtlas(ctx context.Context, bin string, args []string, stdout io.Writer,
 	}
 	return nil
 }
-

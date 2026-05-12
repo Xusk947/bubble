@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"bubble/config"
-	"bubble/queue"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/queue"
 
 	"github.com/segmentio/kafka-go"
 )
@@ -78,4 +78,3 @@ func (p *Publisher[T]) Publish(ctx context.Context, msg T, opts queue.PublishOpt
 }
 
 var _ queue.Publisher[struct{}] = (*Publisher[struct{}])(nil)
-

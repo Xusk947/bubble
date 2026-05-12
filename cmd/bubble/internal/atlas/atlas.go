@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"bubble/cmd/bubble/internal/usage"
-	"bubble/config"
-	"bubble/database"
+	"github.com/Xusk947/bubble/cmd/bubble/internal/usage"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/database"
 )
 
 const defaultEntToURL = "ent://./ent/schema"
@@ -161,4 +161,3 @@ func resolveMigrationsDir(flagValue string, cfg config.Config) string {
 	}
 	return dir
 }
-

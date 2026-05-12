@@ -1,7 +1,7 @@
 package httpserver
 
 import (
-	"bubble/health"
+	"github.com/Xusk947/bubble/health"
 
 	"github.com/gofiber/fiber/v3"
 )

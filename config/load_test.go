@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"bubble/logging"
+	"github.com/Xusk947/bubble/logging"
 )
 
 func TestLoad_UsesDotenvWhenProvided(t *testing.T) {
@@ -71,4 +71,3 @@ func TestLoad_OverrideOptionWins(t *testing.T) {
 		t.Fatalf("override not applied: %q", cfg.HTTP.Address)
 	}
 }
-

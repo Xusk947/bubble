@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"bubble/logging"
+	"github.com/Xusk947/bubble/logging"
 
 	"github.com/joho/godotenv"
 )

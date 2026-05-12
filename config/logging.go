@@ -1,6 +1,6 @@
 package config
 
-import "bubble/logging"
+import "github.com/Xusk947/bubble/logging"
 
 func (c LogConfig) AsLoggingConfig() logging.Config {
 	return logging.Config{

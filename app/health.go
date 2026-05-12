@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"bubble/config"
-	"bubble/health"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/health"
 )
 
 const (
@@ -98,4 +98,3 @@ func errorMessage(err error) string {
 	}
 	return err.Error()
 }
-

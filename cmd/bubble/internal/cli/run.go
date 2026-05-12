@@ -5,10 +5,10 @@ import (
 	"io"
 	"os"
 
-	"bubble/cmd/bubble/internal/atlas"
-	"bubble/cmd/bubble/internal/initcmd"
-	"bubble/cmd/bubble/internal/usage"
-	"bubble/cmd/bubble/internal/version"
+	"github.com/Xusk947/bubble/cmd/bubble/internal/atlas"
+	"github.com/Xusk947/bubble/cmd/bubble/internal/initcmd"
+	"github.com/Xusk947/bubble/cmd/bubble/internal/usage"
+	"github.com/Xusk947/bubble/cmd/bubble/internal/version"
 )
 
 type exitCode int

@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"bubble/config"
-	"bubble/queue"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/queue"
 
 	"github.com/segmentio/kafka-go"
 )
@@ -39,9 +39,9 @@ func NewConsumer[T any](client *Client, cfg config.KafkaConfig, codec queue.Code
 	}
 
 	r := kafka.NewReader(kafka.ReaderConfig{
-		Brokers: client.Brokers,
-		Topic:   topic,
-		GroupID: group,
+		Brokers:  client.Brokers,
+		Topic:    topic,
+		GroupID:  group,
 		MinBytes: 1,
 		MaxBytes: 10e6,
 		MaxWait:  2 * time.Second,
@@ -127,4 +127,3 @@ func (c *Consumer[T]) loop(ctx context.Context, handler queue.Handler[T]) {
 }
 
 var _ queue.Consumer[struct{}] = (*Consumer[struct{}])(nil)
-

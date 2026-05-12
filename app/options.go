@@ -1,8 +1,8 @@
 package app
 
 import (
-	"bubble/config"
-	"bubble/httpserver"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/httpserver"
 
 	"go.uber.org/zap"
 )

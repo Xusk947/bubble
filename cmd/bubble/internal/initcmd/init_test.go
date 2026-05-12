@@ -10,7 +10,7 @@ import (
 
 func TestInferBubbleModuleFromAppModule(t *testing.T) {
 	got := inferBubbleModuleFromAppModule("github.com/xusk947/hello-world")
-	if got != "github.com/xusk947/bubble" {
+	if got != "github.com/Xusk947/bubble" {
 		t.Fatalf("unexpected: %q", got)
 	}
 }
@@ -50,4 +50,3 @@ func TestRun_NonInteractive_SkipGo_CreatesFiles(t *testing.T) {
 		t.Fatalf("expected cache local in .env, got:\n%s", env)
 	}
 }
-

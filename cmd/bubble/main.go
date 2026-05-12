@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"bubble/cmd/bubble/internal/cli"
+	"github.com/Xusk947/bubble/cmd/bubble/internal/cli"
 )
 
 func main() {

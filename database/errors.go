@@ -34,4 +34,3 @@ func (e MigrationError) Error() string {
 func (e MigrationError) Unwrap() error {
 	return e.Cause
 }
-

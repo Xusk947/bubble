@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"bubble/config"
-	"bubble/queue"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/queue"
 )
 
 type natsPayload struct {
@@ -84,4 +84,3 @@ func TestNATSJetStream_PublishConsume(t *testing.T) {
 		t.Fatalf("timeout waiting for message")
 	}
 }
-

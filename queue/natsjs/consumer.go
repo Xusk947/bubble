@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"bubble/config"
-	"bubble/queue"
+	"github.com/Xusk947/bubble/config"
+	"github.com/Xusk947/bubble/queue"
 
 	"github.com/nats-io/nats.go"
 )
@@ -105,4 +105,3 @@ func (c *Consumer[T]) handleMsg(ctx context.Context, m *nats.Msg, handler queue.
 }
 
 var _ queue.Consumer[struct{}] = (*Consumer[struct{}])(nil)
-

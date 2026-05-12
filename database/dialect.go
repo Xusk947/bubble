@@ -19,4 +19,3 @@ func DialectFromDriver(driver string) (string, error) {
 		return "", UnsupportedDriverError{Driver: driver}
 	}
 }
-

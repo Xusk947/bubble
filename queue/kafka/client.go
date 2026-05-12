@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"bubble/config"
+	"github.com/Xusk947/bubble/config"
 
 	"github.com/segmentio/kafka-go"
 	"go.uber.org/zap"
@@ -54,4 +54,3 @@ func splitCSV(value string) []string {
 	}
 	return out
 }
-

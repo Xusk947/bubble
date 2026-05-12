@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"bubble/config"
+	"github.com/Xusk947/bubble/config"
 )
 
 const mysqlLockTimeoutSeconds = 60
@@ -44,4 +44,3 @@ func AcquireLock(ctx context.Context, conn *sql.Conn, cfg config.DatabaseConfig)
 		return func() {}, nil
 	}
 }
-
